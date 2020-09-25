@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Agendar Asesoría</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo-agendar.css">
+    <link rel="shortcut icon" type="image/x-icon" href="fotos/gorro.png" />
+</head>
+
+<body>
+    <br>
+    <header>
+        <div class="container">
+            <img src="fotos/logo.png" alt="logo" class="logo" width="250">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="asesores.html">Asesores</a></li>
+                    <li><a href="res.php">Reseñas</a></li>
+                    <li><a href="info-precios.html">Información y precios</a></li>
+                    <li><a href="agendar.html">Agendar asesoría</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <h1 class="titulo">AGENDA TU ASESORÍA</h1>
+        <p class="intro">Llena el siguiente formato para agendar tu asesoría. Nos pondremos en contacto contigo lo antes
+            posible. Asegúrate de haber leído las <a href="info-precios.html">políticas</a>. Si tienes preguntas o
+            comentarios acerca de las asesorías, mandanos un correo a <a
+                href="mailto: consiliumasesorias.contacto@gmail.com">consiliumasesorias.contacto@gmail.com</a>
+            y con gusto aclararemos tus dudas lo antes posible.</p>
+    </div>
+    <hr>
+    <br>
+    <br>
+
+    <div class="contacts-form">
+        <form id="contact-form" method="post" action="process.php">
+
+            <input name="nombre" type="text" class="form-control" maxlength="50" placeholder="Escribe tu(s) nombre(s)"
+                required>
+            <br>
+            <br>
+
+            <input name="apellidos" type="text" class="form-control" maxlength="60" placeholder="Escribe tus apellidos"
+                required>
+            <br>
+            <br>
+
+            <input name="numero" type="text" class="form-control" maxlength="10"
+                placeholder="Escribe tu número de celular (opcional)">
+            <br>
+            <br>
+
+            <input name="email" type="email" class="form-control" maxlength="60"
+                placeholder="Escribe tu correo electrónico" required>
+            <br>
+            <br>
+
+            <div class="grado">
+                <label class="grad">Grado: </label>
+                <select name="grado" required>
+                    <option value="5º"> 5º </option>
+                    <option value="6º"> 6º </option>
+                    <option value="7º"> 7º </option>
+                    <option value="8º"> 8º </option>
+                    <option value="IºHS"> IºHS </option>
+                </select>
+
+                <input name="salon" type="text" class="salon" maxlength="1" placeholder="Salón" required>
+            </div>
+            <br>
+
+            <div class="disp">
+                <label class="grad">¿Qué días de la semana estás disponible? </label>
+                <br>
+                <input type="checkbox" name="dia[]" value="Lunes"> Lunes
+                <input type="checkbox" name="dia[]" value="Martes"> Martes
+                <input type="checkbox" name="dia[]" value="Miércoles"> Miércoles<br>
+                <input type="checkbox" name="dia[]" value="Jueves"> Jueves
+                <input type="checkbox" name="dia[]" value="Viernes"> Viernes
+                <input type="checkbox" name="dia[]" value="Sábado"> Sábado
+            </div>
+            <br>
+
+            <input name="horarios" type="text" class="form-control"
+                placeholder="¿En qué horario te gustaría tener la asesoría?" required>
+            <br>
+            <br>
+
+            <input name="materias" type="text" class="form-control" maxlength="100"
+                placeholder="Escribe las materias a estudiar" required>
+            <br>
+            <br>
+
+            <input name="temas" type="text" class="form-control" placeholder="Escribe los temas a estudiar"
+                maxlength="100" required>
+            <br>
+            <br>
+
+            <div class="disp">
+                <label class="grad">¿Quién quieres que te asesore?</label>
+                <br>
+                <br>
+                <img src="fotos/asesores.png" alt="asesores" width="90%">
+                <br>
+                <input type="radio" name="asesor" value="Paco"> <strong>Francisco Guerra</strong> ( $150/hr )
+                <br>
+                <input type="radio" name="asesor" value="Robert"> <strong>Roberto Zermeño</strong> ( $150/hr )
+                <br>
+                <input type="radio" name="asesor" value="Fede"> <strong>Federico Garza</strong> ( $150/hr )
+                <br>
+                <input type="radio" name="asesor" value="Otro"> El que este disponible
+            </div>
+            <br>
+
+            <div class="disp">
+                <label class="grad">¿Por dónde quieres que te contactemos?</label>
+                <br>
+                <input type="radio" name="contacto" value="Whatsapp"> Whatsapp
+                <input type="radio" name="contacto" value="Correo"> Correo
+                <input type="radio" name="contacto" value="Llamada"> Llamada
+            </div>
+            <br>
+
+            <div class="aceptar">
+                <input type="radio" name="acepto" value="Acepto" required> He leído las <a
+                    href="info-precios.html">políticas</a>
+                de <i>Asesorías Consilium</i> y
+                acepto.
+            </div>
+
+            <br>
+
+            <input type="submit" class="form-control submit" value="Enviar">
+
+
+        </form>
+    </div>
+
+    <br>
+    <footer>
+        <p>Consilium Asesorías, 2019. <br> Por Paco Guerra.</p>
+    </footer>
+
+</body>
+
+</html>

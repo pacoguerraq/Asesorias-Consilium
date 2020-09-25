@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    margin-bottom: 20px; 
+    padding: 0;
+    background: rgb(205, 147, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+header {
+    margin: 10px 0px 0px 0px;
+    background-color: rgb(165, 31, 31);
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 15px 0px;
+}
+
+nav {
+    float: right;
+    padding-bottom: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 30px;
+    padding-top: 35px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.form {
+    text-align: center;
+    font-size: 25px;
+}
+
+.titulo {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(165, 31, 31);
+    margin: 0;
+}
+
+.intro {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: white;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contacts-form {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(255, 81, 0);
+    border-color: yellow;
+    border-width: 5px;
+    border-style: double;
+}
+
+::placeholder {
+    color: black;
+    opacity: .5;
+}
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 70%;
+    padding-top: 0px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: yellow;
+    border-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: rgb(186, 186, 3);
+    cursor: pointer;
+}
+
+.grado {
+    width: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-left: 15%;
+    padding-bottom: 10px;
+}
+
+.disp {
+    width: 80%;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    word-spacing: 5px;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
+.aceptar {
+    width: 80%;
+    color: black;
+    border: 1px solid white;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    margin-left: 10%;
+    letter-spacing: 1px;
+}
+
+.grad{
+    color: black;
+    opacity: .5;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.salon {
+    width:10%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+.coms {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    bottom: 10px;
+}

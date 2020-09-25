@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reseñas</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo-res.css">
+</head>
+
+<body>
+    <br>
+    <header>
+        <div class="container">
+            <img src="fotos/logo.png" alt="logo" class="logo" width="250">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="asesores.php">Asesores</a></li>
+                    <li><a href="res.html">Reseñas</a></li>
+                    <li><a href="info-precios.html">Información y precios</a></li>
+                    <li><a href="agendar.html">Agendar asesoría</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <h1 class="titulo">RESEÑAS</h1>
+        <p class="intro">En esta página podrás encontrar comentarios de otras personas con respecto a nuestros
+            servicios, ya sean para dar una buena crítica o felicitación así como deciros en que podemos mejorar a
+            través de una retroalimentación.</p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div class="calif-contenedor">
+        <div class="calif-contenedor1">
+            <h1 class="calif-serv">Califica el servicio</h1>
+            <img src="fotos/five-stars.png" class="estrellas" alt="five-stars" class="logo" width="250">
+            <p class="p-calif-serv">
+                A continuación se encuentra un formulario donde puedes compartir tu experiencia en la asesoría. Sientete
+                libre
+                de
+                decirnos que te pareció el servicio, ya sea con retroalimentación o mencionando los aspectos en los que
+                podamos
+                mejorar. Te pedimos seas prudente con tu lenguaje.
+            </p>
+            <hr>
+            <form class="form" action="cometarios.php" method="POST">
+                <tr>
+                    <fieldset>
+                        <legend>
+                            <h3 style="text-align:left">Nombre</h3>
+                        </legend>
+                        <input name="nombre" type="text" required>
+                    </fieldset>
+                </tr>
+                <br>
+                <tr>
+                    <div class="contenedor-input">
+                        <fieldset>
+                            <legend>
+                                <h3>Asesor y fecha de asesoría</h3>
+                            </legend>
+                            <td><select name="asesor" class="uno" required>
+                                    <option value="Francisco Guerra"> Francisco Guerra </option>
+                                    <option value="Roberto Zermeño"> Roberto Zermeño </option>
+                            </td>
+                            <td><input type="text" name="year" class="dos" value="2019" disabled></td>
+                            <td><input type="text" name="mes" class="dos" placeholder="mm"></td>
+                            <td><input type="text" name="dia" class="dos" placeholder="dd"></td>
+                        </fieldset>
+                    </div>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>
+                                <h3 style="text-align:center">Comentario</h3>
+                            </legend>
+                            <textarea rows="5" style="width:95%;font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            font-size: 14px;
+                            text-align: center;" name="comentario" maxlength="255"></textarea>
+                        </fieldset>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <fieldset>
+                        <legend>
+                            <h3 style="text-align:center">Calificación de la asesoría</h3>
+                        </legend>
+                        <div class="ratings">
+                            <input type="radio" name="calificacion" value="1 estrella" id="1"> <label for="1"><img
+                                    src="fotos/1-star.png" alt="1-star" width="200"
+                                    style="padding-bottom: 10px;padding-top:10px;border-color:black;border-width:1px;border-style: dotted"></label><br>
+                            <input type="radio" name="calificacion" value="2 estrellas" id="2"> <label for="2"><img
+                                    src="fotos/2-star.png" alt="2-star" width="200"
+                                    style="padding-bottom: 10px;padding-top:10px;border-color:black;border-width:1px;border-style: dotted"></label><br>
+                            <input type="radio" name="calificacion" value="3 estrellas" id="3"><label for="3">
+                                <img src="fotos/3-star.png" alt="3-star" width="200"
+                                    style="padding-bottom: 10px;padding-top:10px;border-color:black;border-width:1px;border-style: dotted"></label><br>
+                            <input type="radio" name="calificacion" value="4 estrellas" id="4"> <label for="4"><img
+                                    src="fotos/4-star.png" alt="4-star" width="200"
+                                    style="padding-bottom: 10px;padding-top:10px;border-color:black;border-width:1px;border-style: dotted"></label><br>
+                            <input type="radio" name="calificacion" value="5 estrellas" id="5"><label for="5">
+                                <img src="fotos/5-star.png" alt="5-star" width="200"
+                                    style="padding-bottom: 10px;padding-top:10px;border-color:black;border-width:1px;border-style: dotted"></label>
+                        </div>
+                    </fieldset>
+                </tr>
+                <br>
+                <input type="submit" class="submit" value="Enviar">
+
+            </form>
+        </div>
+        <div class="calif-contenedor2">
+            <h1 class="calif-serv">Respuestas</h1>
+            <p class="p-calif-serv">En esta sección se muestran las respuestas de recientes asesorados.</p>
+            <hr>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Consilium Asesorías, 2019. <br> Por Paco Guerra.</p>
+    </footer>
+</body>
+
+</html>

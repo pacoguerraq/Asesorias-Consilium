@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(205, 147, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    color: rgb(205, 205, 205);
+}
+
+header {
+    margin: 10px 0 0 0;
+    background-color: rgb(165, 31, 31);
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 15px 0px;
+}
+
+nav {
+    float: right;
+    padding-bottom: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 30px;
+    padding-top: 35px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.bienvenido {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cont {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.contenedor {
+    display: inline-block;
+    margin: 0 5%;
+    position: relative;
+    left: 2.5%;
+}
+
+.contenedor2 {
+    display: inline-block;
+    font-size: 30px;
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.img-responsive {
+    width: 25%;
+    float: right;
+    margin-right: 10%;
+    padding: 5px 10px;
+    border-width: 3px;
+    border-style: double;
+    border-color: rgb(165, 31, 31);
+    background-color: rgb(175, 125, 0);
+}
+
+.exp {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+    color: rgb(165, 31, 31);
+}
