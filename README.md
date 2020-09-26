@@ -1,2 +1,2 @@
 # Asesorias-Consilium
-Unreleased high school project for an own business of academic advisories.
+Unreleased high school web page for an own business of academic advisories.
