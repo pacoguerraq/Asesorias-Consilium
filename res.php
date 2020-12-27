@@ -128,7 +128,7 @@
 
 <?php
 
-$conn = mysqli_connect("localhost", "asesor14_q", "Consilium.01", "asesor14_datos");
+$conn = mysqli_connect("localhost", "hidden", "hidden", "asesor14_datos");
  
 if($conn === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
