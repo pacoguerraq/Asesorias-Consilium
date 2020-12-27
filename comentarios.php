@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'asesor14_q', 'Consilium.01', 'asesor14_datos');
+$conn = mysqli_connect('localhost', 'hidden', 'hidden', 'asesor14_datos');
 
 if (mysqli_connect_errno($conn)) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
